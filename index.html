@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+         <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+        <a-plane static-body
+            width="30"
+            height="30"
+            position="0 0 -3"
+            rotation="-90 0 0"
+            color="tan">
+        </a-plane>
+        <a-sphere dynamic-body
+        color="red"
+        radius="2"
+        position="-1 12 -10">
+        </a-sphere>
+        <a-torus color="#43A367" arc="360" radius="3" position="3 2 -10" rotation=" 45 90 0" radius-tubular="0.1"></a-torus>
+    
+    <a-box static body
+    color="tomato" depth="2" height="4" width="0.5" position="0 2 -10"></a-box>
+        </a-scene>
+    </body>
+</html>
